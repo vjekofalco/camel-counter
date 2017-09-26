@@ -1,0 +1,17 @@
+body {
+    font-size: 13px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    width: 80%;
+    min-width: 750px;
+
+    @media all and (max-width: 750px) {
+        width: 100%;
+    }
+}
+
