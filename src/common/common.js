@@ -1,3 +1,8 @@
 let message = 'Hello Socialsweethearts!'
 
-console.log(`${message} Hello babel.`);
+document.addEventListener('DOMContentLoaded', function(){
+    console.log(`${message} Hello babel.something`);
+});
+
+
+
