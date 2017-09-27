@@ -34,6 +34,23 @@ img {
     }
 }
 
+.left {
+  width: 35%;
+}
+
+.right {
+  wifth: 65%;
+}
+
+.left,
+.right {
+  float: left;
+  min-height: 1px;
+  @media all and (max-width: 750px) {
+      width: 100%;
+  }
+}
+
 .headline-1 {
     @include text-basic(35px, 25px);
 }

@@ -2,6 +2,7 @@
 @import "../common/mixins";
 
 $beards: ('beard-full', 'beard-middle', 'beard-none', 'beard-small');
+$body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
 
 .counter-form {
   margin: 30px 0;
@@ -109,6 +110,24 @@ $beards: ('beard-full', 'beard-middle', 'beard-none', 'beard-small');
         @each $beard in $beards {
           &.#{$beard} {
             background-image: url('/images/#{$beard}.png');
+          }
+        }
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.body-shape {
+      .label-box-content {
+        @include responsive-boxes(0px, 3, 1px);
+        float: left;
+        height: 85px;
+
+        @each $body in $body-shapes {
+          &.#{$body} {
+            background-image: url('/images/#{$body}.png');
           }
         }
 
