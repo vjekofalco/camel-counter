@@ -1,0 +1,103 @@
+@import "../common/palette";
+@import "../common/mixins";
+
+.counter-form {
+  margin: 30px 0;
+
+  .option {
+    border-bottom: 1px solid $border-color;
+    overflow: hidden;
+    padding: 25px 0;
+
+    .left {
+      width: 35%;
+      float: left;
+
+      .headline-2 {
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      @media all and (max-width: 750px) {
+          width: 100%;
+      }
+    }
+
+    .right {
+      width: 65%;
+      float: left;
+
+      .input-box{
+        padding-left: 20px;
+
+        input[type="range"] {
+          height: 11px;
+          border-radius: 15px;
+          background: $border-color;
+          outline: none;
+          opacity: 0.7;
+          margin-top: 8px;
+          -webkit-appearance: none;
+          width: 100%;
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 23px;
+            height: 23px;
+            border-radius: 23px;
+            background: $primary-color-1;
+            cursor: pointer;
+          }
+
+          &::-moz-range-thumb {
+            width: 23px;
+            height: 23px;
+            border-radius: 23px;
+            background: $primary-color-1;
+            cursor: pointer;
+          }
+        }
+
+        select {
+          background-color: white;
+          border: 1px solid $border-color;
+          font-size: 15px;
+          height: 40px;
+          width: 100%;
+        }
+      }
+
+      @media all and (max-width: 750px) {
+          width: 100%;
+      }
+    }
+
+    &.hair-length {
+      .label-box-content {
+        @include responsive-boxes(0px, 4, 1px);
+        color: $primary-color-1;
+        font-weight: bold;
+        float: left;
+        height: 30px;
+
+        p {
+          text-align: center;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &.eye-color {
+      label:not(:first-child){
+        input[type="radio"]{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

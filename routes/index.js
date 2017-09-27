@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:lang/:sex', function(req, res, next) {
-  res.render('index', {title: 'Express' });
+  res.render('index', {title: 'Camel Calculator' });
 })
 
 module.exports = router;

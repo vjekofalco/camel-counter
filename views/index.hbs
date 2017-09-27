@@ -1,2 +1,100 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<section>
+  <div class="wrapper">
+    <form action="/en/counter" method="POST" class="counter-form">
+      <div class="option">
+        <div class="left">
+          <h3 class="headline-2">Age<span class="age-range-value">30</span></h3>
+        </div>
+        <div class="right">
+          <div class="input-box">
+            <input type="range" name="age" min="1" max="100" value="50" class="age-range">
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="left">
+          <h3 class="headline-2">Height (cm) <span class="height-range-value">30</span></h3>
+        </div>
+        <div class="right">
+          <div class="input-box">
+            <input type="range" name="height" min="1" max="250" value="125" class="height-range">
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="left">
+          <h3 class="headline-2">Hair color</h3>
+        </div>
+        <div class="right">
+          <div class="input-box">
+            <select class="hair-color" name="hair-color">
+              <option value="blond">Blond</option>
+              <option value="braun">Braun</option>
+              <option value="black">Black</option>
+              <option value="Red">Red</option>
+              <option value="Bold">Bold</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="option hair-length">
+        <div class="left">
+          <h3 class="headline-2">Hair length</h3>
+        </div>
+        <div class="right">
+          <div class="input-box">
+            <input type="radio" name="hair-length" value="long" id="hair-length-long" class="hidden" checked>
+            <label for="hair-length-long">
+                <div class="label-box-content">
+                    <p>Long</p>
+                </div>
+            </label>
+            <input type="radio" name="hair-length" value="short" id="hair-length-short" class="hidden">
+            <label for="hair-length-short">
+                <div class="label-box-content">
+                    <p>Short</p>
+                </div>
+            </label>
+            <input type="radio" name="hair-length" value="middle" id="hair-length-middle" class="hidden">
+            <label for="hair-length-middle">
+                <div class="label-box-content">
+                    <p>Middle</p>
+                </div>
+            </label>
+            <input type="radio" name="hair-length" value="bald" id="hair-length-bald" class="hidden">
+            <label for="hair-length-bald">
+                <div class="label-box-content">
+                    <p>Bald</p>
+                </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="option eye-color">
+        <div class="left">
+          <h3 class="headline-2">Eye color</h3>
+        </div>
+        <div class="right">
+          <div class="input-box">
+            <label for="eye-color-blue">
+              <input type="radio" name="eye-color" value="long" id="eye-color-blue" checked>
+              <span>Blue</span>
+            </label>
+            <label for="eye-color-green">
+              <input type="radio" name="eye-color" value="long" id="eye-color-green">
+              <span>Green</span>
+            </label>
+            <label for="eye-color-Braun">
+              <input type="radio" name="eye-color" value="long" id="eye-color-braun">
+              <span>Braun</span>
+            </label>
+            <label for="eye-color-gray">
+              <input type="radio" name="eye-color" value="long" id="eye-color-gray">
+              <span>Long</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
