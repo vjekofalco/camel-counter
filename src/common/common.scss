@@ -1,17 +1,38 @@
+@import "mixins";
+
+* {
+    margin: 0;
+}
+
 body {
     font-size: 13px;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .wrapper {
+    margin: 0 auto;
     width: 80%;
-    min-width: 750px;
+    overflow: hidden;
+    position: relative;
 
     @media all and (max-width: 750px) {
         width: 100%;
     }
+
+    &.max-height {
+        height: 100%;
+    }
+}
+
+.hedline-1 {
+    @include text-basic(35px, 25px);
 }
 

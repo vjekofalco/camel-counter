@@ -1,0 +1,38 @@
+@import "../common/palette";
+
+header {
+  background-image: url("/images/dessert-bg.jpg");
+  background-position: top center;
+  height: 150px;
+
+  .languages {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .headline {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .logo {
+      width: 15%;
+    }
+
+    .headline-title {
+      color: $text-color;
+      width: 85%;
+      padding-left: 10px;
+    }
+  }
+}

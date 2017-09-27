@@ -1,2 +1,2 @@
-import './common/common'
-import './common/common.scss'
+import './bundle.scss';
+import './common/common';

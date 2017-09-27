@@ -1,0 +1,7 @@
+@mixin text-basic ($text-big, $text-small) {
+  font-size: $text-big;
+
+  @media all and (max-width: 750px) {
+    font-size: $text-small;
+  }
+}
