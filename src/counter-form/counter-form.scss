@@ -1,6 +1,8 @@
 @import "../common/palette";
 @import "../common/mixins";
 
+$beards: ('beard-full', 'beard-middle', 'beard-none', 'beard-small');
+
 .counter-form {
   margin: 30px 0;
 
@@ -93,10 +95,26 @@
     }
 
     &.eye-color {
-      label:not(:first-child){
-        input[type="radio"]{
-          margin-left: 15px;
+      input[type="radio"]:not(:first-child){
+        margin-left: 15px;
+      }
+    }
+
+    &.beard-style {
+      .label-box-content {
+        @include responsive-boxes(0px, 4, 1px);
+        float: left;
+        height: 55px;
+
+        @each $beard in $beards {
+          &.#{$beard} {
+            background-image: url('/images/#{$beard}.png');
+          }
         }
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
   }
