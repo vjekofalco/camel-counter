@@ -39,13 +39,14 @@ img {
 }
 
 .right {
-  wifth: 65%;
+  width: 65%;
 }
 
 .left,
 .right {
   float: left;
   min-height: 1px;
+
   @media all and (max-width: 750px) {
       width: 100%;
   }
