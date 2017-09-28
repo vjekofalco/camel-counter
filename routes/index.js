@@ -11,4 +11,8 @@ router.get('/:lang/:sex', function(req, res, next) {
   res.render('index', {title: 'Camel Calculator' });
 })
 
+router.post('/:lang/counter', function(req, res, next) {
+  res.render('counter', {title: 'Camel Calculator', countresult: '50'});
+})
+
 module.exports = router;

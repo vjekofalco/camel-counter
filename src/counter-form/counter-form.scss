@@ -6,10 +6,6 @@ $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
 
 .counter-form {
   .option {
-    border-bottom: 1px solid $border-color;
-    overflow: hidden;
-    padding: 25px 0;
-
     .headline-2 {
       position: relative;
 
@@ -122,9 +118,5 @@ $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
 
   .button {
     @extend %button;
-
-    color: $cammel-white;
-    font-size: 20px;
-    text-transform: uppercase;
   }
 }

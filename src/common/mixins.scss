@@ -18,10 +18,12 @@
 
 %button {
     border: 0;
+    color: $cammel-white;
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
+    font-size: 15px;
     line-height: 45px;
     min-height: 45px;
     padding: 0 25px;
@@ -30,6 +32,19 @@
 
     &.button-primary {
       background-color: $primary-color-1;
+      text-transform: uppercase;
+    }
+
+    &.button-loud {
+      background-color: $app-loud;
+    }
+
+    &.button-ok {
+      background-color: $app-green;
+    }
+
+    &.button-dark {
+      background-color: $app-dark;
     }
 
     @media all and (max-width: 750px) {

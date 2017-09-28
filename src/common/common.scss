@@ -32,6 +32,12 @@ img {
     &.max-height {
         height: 100%;
     }
+
+    .option {
+      border-bottom: 1px solid $border-color;
+      overflow: hidden;
+      padding: 25px 0;
+    }
 }
 
 .left {
