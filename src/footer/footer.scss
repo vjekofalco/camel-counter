@@ -1,0 +1,42 @@
+@import "../common/common";
+footer {
+  margin-top: 15px;
+  overflow: hidden;
+
+  .footer-box {
+    @include responsive-boxes(0px, 2, 0px);
+    float: left;
+
+    .facebook-share {
+      width: 120px;
+    }
+
+    .footer-horizontal-list {
+      float: right;
+
+      > li {
+            display: inline-block;
+            cursor: default;
+            padding: 8px 0;
+
+            a {
+              color: $border-color;
+            }
+        }
+
+        > li:not(:last-child) {
+            > a:after {
+                content: '•';
+                padding: 2px 2px;
+            }
+        }
+
+        > li:last-child {
+          background-image: url('/images/mrnerd.png');
+          background-position: right;
+          background-repeat: no-repeat;
+          padding-right: 40px;
+        }
+    }
+  }
+}

@@ -5,8 +5,6 @@ $beards: ('beard-full', 'beard-middle', 'beard-none', 'beard-small');
 $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
 
 .counter-form {
-  margin: 30px 0;
-
   .option {
     border-bottom: 1px solid $border-color;
     overflow: hidden;
