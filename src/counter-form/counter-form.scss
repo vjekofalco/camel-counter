@@ -13,6 +13,10 @@ $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
         position: absolute;
         right: 0;
       }
+
+      @media all and (max-width: 750px) {
+        margin-bottom: 10px;
+      }
     }
 
     .input-box{
@@ -22,7 +26,6 @@ $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
         background: $border-color;
         outline: none;
         opacity: 0.7;
-        margin-top: 8px;
         -webkit-appearance: none;
         width: 100%;
 
@@ -42,6 +45,10 @@ $body-shapes: ('body-chubby', 'body-thin', 'body-sporty');
           border-radius: 23px;
           background: $primary-color-1;
           cursor: pointer;
+        }
+
+        @media all and (min-width: 750px) {
+          margin-top: 8px;
         }
       }
 

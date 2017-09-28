@@ -12,8 +12,6 @@ footer {
     }
 
     .footer-horizontal-list {
-      float: right;
-
       > li {
             display: inline-block;
             cursor: default;
@@ -37,6 +35,15 @@ footer {
           background-repeat: no-repeat;
           padding-right: 40px;
         }
+
+        @media all and (min-width: 750px) {
+          float: right;
+        }
+    }
+
+    @media all and (max-width: 750px) {
+      width: 100%;
+      text-align: center;
     }
   }
 }
