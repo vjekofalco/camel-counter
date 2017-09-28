@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var cp = require('../services/calculate-points-service')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,7 +13,9 @@ router.get('/:lang/:sex', function(req, res, next) {
 })
 
 router.post('/:lang/counter', function(req, res, next) {
-  res.render('counter', {title: 'Camel Calculator', countresult: '50'});
+  console.log(req.body);
+  var countresult = cp.calculatePoints(req.body);
+  res.render('counter', {title: 'Camel Calculator', countresult: countresult});
 })
 
 module.exports = router;
